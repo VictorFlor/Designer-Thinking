@@ -5,7 +5,7 @@ import ResolvedDashboardPage from './pages/ResolvedDashboardPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Designer-Thinking">
       <Routes>
         <Route path="/" element={<IntroPage />} />
         <Route path="/presentation" element={<PresentationPage />} />
