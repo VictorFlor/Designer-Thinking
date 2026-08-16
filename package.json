@@ -1,8 +1,7 @@
-{
+{"homepage": "https://victorflor.github.io/Designer-Thinking/",
   "name": "seminario-design-thinking",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://victorflor.github.io/Designer-Thinking/",
   "type": "module",
   "scripts": {
     "dev": "vite",
