@@ -104,17 +104,6 @@ export default function ResolvedDashboardPage() {
         </div>
       </div>
 
-      {/* Botão para voltar à apresentação */}
-      <div className="mt-8 flex justify-center">
-        <Link 
-          to="/presentation"
-          className="flex items-center gap-2 px-6 py-3 bg-slate-800 text-white font-medium text-base md:text-lg rounded-full shadow-lg hover:bg-slate-700 transition-colors active:scale-95"
-        >
-          <RotateCcw size={20} /> Voltar para Apresentação
-        </Link>
-      </div>
-
-
       <div className="mt-8 flex justify-center">
         <Link 
           to="/presentation"

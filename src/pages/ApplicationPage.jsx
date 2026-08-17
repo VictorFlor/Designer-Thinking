@@ -11,21 +11,19 @@ export default function PresentationPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans pb-12">
-      
+    <div className="min-h-screen bg-sky-200 text-slate-800 font-sans pb-10">
       {/* Header Limpo */}
-      <header className="bg-white shadow-sm py-10 px-4 md:py-16 md:px-8 text-center">
+      <header className="bg-blue-400 shadow-sm py-10 px-4 md:py-16 md:px-8 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
           Design Thinking
         </h1>
-        <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-slate-800 max-w-2xl mx-auto">
           Uma abordagem focada no ser humano. Porque construir o sistema mais otimizado do mundo não adianta nada se ninguém conseguir usá-lo.
         </p>
       </header>
 
       {/* Conteúdo Principal */}
       <main className="max-w-5xl mx-auto py-8 px-4 md:py-12 space-y-12 md:space-y-16">
-        
         {/* Imagem do Framework */}
         <section className="flex justify-center">
           <div className="bg-white p-3 md:p-4 rounded-xl shadow-md border border-slate-100 max-w-3xl w-full">
@@ -56,17 +54,17 @@ export default function PresentationPage() {
 
         {/* Exemplos e Links */}
         <section className="bg-blue-50 p-6 md:p-8 rounded-2xl">
-          <h2 className="text-xl md:text-2xl font-semibold mb-4 text-blue-900">Exemplos Práticos & Referências</h2>
+          <h2 className="text-xl md:text-2xl font-semibold mb-4 text-blue-900">Referências</h2>
           <div className="space-y-4">
-            <p className="text-sm md:text-base text-blue-800">
-              <strong>Caso de Estudo:</strong> Como a GE Healthcare redesenhou as máquinas de ressonância magnética (que aterrorizavam crianças) transformando-as em "Aventuras de Pirata", reduzindo drasticamente a necessidade de sedação infantil simplesmente aplicando <em>Empatia</em>.
-            </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4">
-              <a href="https://hbr.org/2008/06/design-thinking" target="_blank" rel="noreferrer" className="flex items-center justify-center sm:justify-start gap-2 bg-white sm:bg-transparent px-4 py-2 sm:p-0 rounded border border-blue-200 sm:border-none text-blue-600 hover:text-blue-800 font-medium transition-colors">
-                Artigo da HBR <ArrowRight size={16} />
+              <a href="https://www.youtube.com/watch?v=0M9G70OpT6U" target="_blank" rel="noreferrer" className="flex items-center justify-center sm:justify-start gap-2 bg-white sm:bg-transparent px-4 py-2 sm:p-0 rounded border border-blue-200 sm:border-none text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                Tim Brown - Designers [youtube] <ArrowRight size={16} />
               </a>
-              <a href="https://www.nngroup.com/articles/design-thinking/" target="_blank" rel="noreferrer" className="flex items-center justify-center sm:justify-start gap-2 bg-white sm:bg-transparent px-4 py-2 sm:p-0 rounded border border-blue-200 sm:border-none text-blue-600 hover:text-blue-800 font-medium transition-colors">
-                Nielsen Norman Group <ArrowRight size={16} />
+              <a href="https://www.youtube.com/watch?v=5xRSOltxXnU" target="_blank" rel="noreferrer" className="flex items-center justify-center sm:justify-start gap-2 bg-white sm:bg-transparent px-4 py-2 sm:p-0 rounded border border-blue-200 sm:border-none text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                Design Thinking: O que é... [youtube] <ArrowRight size={16} />
+              </a>
+              <a href="https://www.ibm.com/br-pt/think/topics/design-thinking" target="_blank" rel="noreferrer" className="flex items-center justify-center sm:justify-start gap-2 bg-white sm:bg-transparent px-4 py-2 sm:p-0 rounded border border-blue-200 sm:border-none text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                Artigo IBM <ArrowRight size={16} />
               </a>
             </div>
           </div>
