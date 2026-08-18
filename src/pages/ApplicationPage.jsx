@@ -304,6 +304,152 @@ export default function PresentationPage() {
 
         <section className="px-4 max-w-6xl mx-auto">
           <div className="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4 uppercase tracking-tight">
+              Design Thinking e Abordagens Relacionadas
+            </h2>
+            <p className="text-slate-600 text-base md:text-lg px-2">
+              O Design Thinking não atua sozinho. Ele frequentemente dialoga e se mistura com outras metodologias e estruturas do mercado para potencializar resultados.
+            </p>
+          </div>
+
+          {/* Grid: 1 coluna no mobile, 3 colunas no desktop */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
+            {/* Bloco 1: Double Diamond */}
+            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-300 transition-all flex flex-col h-full">
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 text-2xl mb-5">
+                🔷
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Double Diamond</h3>
+              <p className="text-slate-600 text-sm md:text-base flex-grow">
+                É um modelo visual que organiza o processo de design em quatro grandes fases: <strong>Descobrir, Definir, Desenvolver e Entregar</strong>. Seu diferencial é demonstrar a alternância entre o pensamento divergente (abrir possibilidades) e o convergente (focar em soluções).
+              </p>
+            </div>
+
+            {/* Bloco 2: Design Sprint */}
+            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-300 transition-all flex flex-col h-full">
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 text-2xl mb-5">
+                ⏱️
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Design Sprint</h3>
+              <p className="text-slate-600 text-sm md:text-base flex-grow">
+                Criado pelo Google Ventures, é como se fosse o Design Thinking aplicado em <strong>modo turbo</strong>. É uma metodologia estruturada de 5 dias projetada para responder a questões críticas de negócios rapidamente através de prototipagem e testes com usuários.
+              </p>
+            </div>
+
+            {/* Bloco 3: Service Design */}
+            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-300 transition-all flex flex-col h-full">
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 text-2xl mb-5">
+                🤝
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Service Design</h3>
+              <p className="text-slate-600 text-sm md:text-base flex-grow">
+                Enquanto outras abordagens focam em produtos, o Design de Serviços foca em <strong>toda a jornada</strong>. Ele planeja e organiza pessoas, infraestrutura, comunicação e componentes materiais para melhorar a experiência final entre a marca e o consumidor.
+              </p>
+            </div>
+
+          </div>
+
+          {/* Tabela de Comparação */}
+          <div className="mt-12">
+            <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 text-center">
+              Quadro Comparativo
+            </h3>
+            <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden relative">
+              <div className="overflow-x-auto">
+                <table className="w-full text-left border-collapse min-w-[900px]">
+                  <thead>
+                    <tr className="bg-slate-50 border-b-2 border-slate-200 text-slate-800 text-sm md:text-base">
+                      <th className="py-4 px-4 md:px-6 font-bold w-1/5 sticky left-0 bg-slate-50 z-10 border-r border-slate-200 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)]">Critério</th>
+                      <th className="py-4 px-4 md:px-6 font-bold w-1/5 text-blue-600">Design Thinking</th>
+                      <th className="py-4 px-4 md:px-6 font-bold w-1/5 text-indigo-600">Double Diamond</th>
+                      <th className="py-4 px-4 md:px-6 font-bold w-1/5 text-emerald-600">Design Sprint</th>
+                      <th className="py-4 px-4 md:px-6 font-bold w-1/5 text-rose-600">Service Design</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 text-sm">
+                    <tr className="hover:bg-slate-50/50 transition-colors">
+                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">O que é?</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Abordagem de resolução de problemas</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Framework de processo</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Processo estruturado e intensivo</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Abordagem para projetar e melhorar serviços</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/50 transition-colors">
+                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Objetivo</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Resolver problemas centrados no usuário</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Organizar descoberta e desenvolvimento</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Validar uma solução rapidamente</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Criar ou melhorar experiências e serviços</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/50 transition-colors">
+                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Duração</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Variável</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Variável</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600 font-medium">Tradicionalmente 5 dias</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Variável</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/50 transition-colors">
+                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Foco</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Pessoas + problema + solução</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Problema + solução</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Experimentação e validação</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Experiência do usuário + processos + organização</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/50 transition-colors">
+                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Flexibilidade</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Alta</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Alta</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Mais estruturado</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Alta</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/50 transition-colors">
+                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Prototipagem</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Importante</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Importante</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600 font-medium">Fundamental</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Importante</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/50 transition-colors">
+                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Teste com usuário</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Sim</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Sim</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Sim</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Sim</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/50 transition-colors">
+                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Principal perspectiva</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Necessidades humanas e resolução de problemas</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Descoberta → definição → desenvolvimento → entrega</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Testar rapidamente uma hipótese/solução</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Jornada do usuário e funcionamento do serviço</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/50 transition-colors">
+                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Principais ferramentas</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Empatia, ideação, protótipos, testes</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Discover, Define, Develop, Deliver</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Sprint, sketch, decisão, protótipo, teste</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Journey Map, Service Blueprint, Personas</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/50 transition-colors">
+                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Exemplo de aplicação</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Criar uma nova solução para um problema</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Estruturar um projeto de inovação</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Validar uma nova funcionalidade</td>
+                      <td className="py-4 px-4 md:px-6 text-slate-600">Melhorar um serviço de atendimento</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            {/* Dica para usuários de mobile */}
+            <div className="text-center mt-3 text-slate-400 text-xs md:hidden flex justify-center items-center gap-2">
+              <span>←</span> Deslize para os lados para ver mais <span>→</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-4 max-w-6xl mx-auto">
+          <div className="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4">
               Uma visão realista da metodologia
             </h2>
@@ -418,7 +564,7 @@ export default function PresentationPage() {
         <section className="bg-blue-50 p-6 md:p-8 rounded-2xl">
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-blue-900">Referências</h2>
           <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4">
+            <div className="flex flex-wrap sm:flex-row gap-3 md:gap-4 pt-4">
               <a href="https://www.youtube.com/watch?v=0M9G70OpT6U" target="_blank" rel="noreferrer" className="flex items-center justify-center sm:justify-start gap-2 bg-white sm:bg-transparent px-4 py-2 sm:p-0 rounded border border-blue-200 sm:border-none text-blue-600 hover:text-blue-800 font-medium transition-colors">
                 Tim Brown - Designers [youtube] <ArrowRight size={16} />
               </a>
@@ -427,6 +573,15 @@ export default function PresentationPage() {
               </a>
               <a href="https://www.ibm.com/br-pt/think/topics/design-thinking" target="_blank" rel="noreferrer" className="flex items-center justify-center sm:justify-start gap-2 bg-white sm:bg-transparent px-4 py-2 sm:p-0 rounded border border-blue-200 sm:border-none text-blue-600 hover:text-blue-800 font-medium transition-colors">
                 Artigo IBM <ArrowRight size={16} />
+              </a>
+              <a href="https://pm3.com.br/blog/ferramentas-para-usar-em-cada-fase-do-double-diamond" target="_blank" rel="noreferrer" className="flex items-center justify-center sm:justify-start gap-2 bg-white sm:bg-transparent px-4 py-2 sm:p-0 rounded border border-blue-200 sm:border-none text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                Artigo PM3 designer sprint <ArrowRight size={16} />
+              </a>
+              <a href="https://pm3.com.br/blog/service-design-o-que-e-design-de-servico/" target="_blank" rel="noreferrer" className="flex items-center justify-center sm:justify-start gap-2 bg-white sm:bg-transparent px-4 py-2 sm:p-0 rounded border border-blue-200 sm:border-none text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                Artigo PM3 designer service<ArrowRight size={16} />
+              </a>
+              <a href="https://designsprintkit.withgoogle.com/methodology/overview" target="_blank" rel="noreferrer" className="flex items-center justify-center sm:justify-start gap-2 bg-white sm:bg-transparent px-4 py-2 sm:p-0 rounded border border-blue-200 sm:border-none text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                Designer Sprint with Google <ArrowRight size={16} />
               </a>
             </div>
           </div>
