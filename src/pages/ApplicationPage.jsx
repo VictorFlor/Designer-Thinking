@@ -302,8 +302,8 @@ export default function PresentationPage() {
           </div>
         </section>
 
-        <section className="py-12 md:py-16 px-4 max-w-6xl mx-auto">
-          <div className="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
+        <section className="px-4 max-w-6xl mx-auto">
+          <div className="text-center mb-5 md:mb-6 max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4 uppercase tracking-tight">
               Design Thinking e Abordagens Relacionadas
             </h2>
@@ -314,7 +314,6 @@ export default function PresentationPage() {
 
           {/* Grid: 1 coluna no mobile, 3 colunas no desktop */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
-            
             <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-300 transition-all flex flex-col h-full">
               <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 text-2xl mb-5">
                 🔷
@@ -352,10 +351,8 @@ export default function PresentationPage() {
             <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 text-center md:text-left">
               Quadro Comparativo
             </h3>
-            
             <div className="w-full">
               <table className="block md:table w-full text-left border-collapse bg-transparent md:bg-white md:shadow-sm md:rounded-2xl md:border md:border-slate-200 overflow-hidden">
-                
                 {/* Cabeçalho oculto no mobile */}
                 <thead className="hidden md:table-header-group">
                   <tr className="bg-slate-50 border-b-2 border-slate-200 text-slate-800 text-sm md:text-base">
@@ -366,9 +363,7 @@ export default function PresentationPage() {
                     <th className="py-4 px-6 font-bold w-[20%] text-rose-600">Service Design</th>
                   </tr>
                 </thead>
-                
                 <tbody className="block md:table-row-group divide-y-0 md:divide-y md:divide-slate-100 text-sm md:text-sm lg:text-base">
-                  
                   {/* Linha 1 */}
                   <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-6 md:mb-0 hover:bg-slate-50/50 transition-colors">
                     <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
