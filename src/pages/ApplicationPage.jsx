@@ -302,7 +302,7 @@ export default function PresentationPage() {
           </div>
         </section>
 
-        <section className="px-4 max-w-6xl mx-auto">
+        <section className="py-12 md:py-16 px-4 max-w-6xl mx-auto">
           <div className="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4 uppercase tracking-tight">
               Design Thinking e Abordagens Relacionadas
@@ -314,7 +314,7 @@ export default function PresentationPage() {
 
           {/* Grid: 1 coluna no mobile, 3 colunas no desktop */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
-            {/* Bloco 1: Double Diamond */}
+            
             <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-300 transition-all flex flex-col h-full">
               <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 text-2xl mb-5">
                 🔷
@@ -325,7 +325,6 @@ export default function PresentationPage() {
               </p>
             </div>
 
-            {/* Bloco 2: Design Sprint */}
             <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-300 transition-all flex flex-col h-full">
               <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 text-2xl mb-5">
                 ⏱️
@@ -336,7 +335,6 @@ export default function PresentationPage() {
               </p>
             </div>
 
-            {/* Bloco 3: Service Design */}
             <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-300 transition-all flex flex-col h-full">
               <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 text-2xl mb-5">
                 🤝
@@ -349,101 +347,260 @@ export default function PresentationPage() {
 
           </div>
 
-          {/* Tabela de Comparação */}
+          {/* TABELA DE COMPARAÇÃO - Totalmente responsiva em formato de blocos/cards no mobile */}
           <div className="mt-12">
-            <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 text-center">
+            <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 text-center md:text-left">
               Quadro Comparativo
             </h3>
-            <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden relative">
-              <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse min-w-[900px]">
-                  <thead>
-                    <tr className="bg-slate-50 border-b-2 border-slate-200 text-slate-800 text-sm md:text-base">
-                      <th className="py-4 px-4 md:px-6 font-bold w-1/5 sticky left-0 bg-slate-50 z-10 border-r border-slate-200 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)]">Critério</th>
-                      <th className="py-4 px-4 md:px-6 font-bold w-1/5 text-blue-600">Design Thinking</th>
-                      <th className="py-4 px-4 md:px-6 font-bold w-1/5 text-indigo-600">Double Diamond</th>
-                      <th className="py-4 px-4 md:px-6 font-bold w-1/5 text-emerald-600">Design Sprint</th>
-                      <th className="py-4 px-4 md:px-6 font-bold w-1/5 text-rose-600">Service Design</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-100 text-sm">
-                    <tr className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">O que é?</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Abordagem de resolução de problemas</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Framework de processo</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Processo estruturado e intensivo</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Abordagem para projetar e melhorar serviços</td>
-                    </tr>
-                    <tr className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Objetivo</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Resolver problemas centrados no usuário</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Organizar descoberta e desenvolvimento</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Validar uma solução rapidamente</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Criar ou melhorar experiências e serviços</td>
-                    </tr>
-                    <tr className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Duração</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Variável</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Variável</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600 font-medium">Tradicionalmente 5 dias</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Variável</td>
-                    </tr>
-                    <tr className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Foco</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Pessoas + problema + solução</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Problema + solução</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Experimentação e validação</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Experiência do usuário + processos + organização</td>
-                    </tr>
-                    <tr className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Flexibilidade</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Alta</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Alta</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Mais estruturado</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Alta</td>
-                    </tr>
-                    <tr className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Prototipagem</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Importante</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Importante</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600 font-medium">Fundamental</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Importante</td>
-                    </tr>
-                    <tr className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Teste com usuário</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Sim</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Sim</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Sim</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Sim</td>
-                    </tr>
-                    <tr className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Principal perspectiva</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Necessidades humanas e resolução de problemas</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Descoberta → definição → desenvolvimento → entrega</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Testar rapidamente uma hipótese/solução</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Jornada do usuário e funcionamento do serviço</td>
-                    </tr>
-                    <tr className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Principais ferramentas</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Empatia, ideação, protótipos, testes</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Discover, Define, Develop, Deliver</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Sprint, sketch, decisão, protótipo, teste</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Journey Map, Service Blueprint, Personas</td>
-                    </tr>
-                    <tr className="hover:bg-slate-50/50 transition-colors">
-                      <td className="py-4 px-4 md:px-6 font-semibold text-slate-900 sticky left-0 bg-white z-10 border-r border-slate-100 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">Exemplo de aplicação</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Criar uma nova solução para um problema</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Estruturar um projeto de inovação</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Validar uma nova funcionalidade</td>
-                      <td className="py-4 px-4 md:px-6 text-slate-600">Melhorar um serviço de atendimento</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            {/* Dica para usuários de mobile */}
-            <div className="text-center mt-3 text-slate-400 text-xs md:hidden flex justify-center items-center gap-2">
-              <span>←</span> Deslize para os lados para ver mais <span>→</span>
+            
+            <div className="w-full">
+              <table className="block md:table w-full text-left border-collapse bg-transparent md:bg-white md:shadow-sm md:rounded-2xl md:border md:border-slate-200 overflow-hidden">
+                
+                {/* Cabeçalho oculto no mobile */}
+                <thead className="hidden md:table-header-group">
+                  <tr className="bg-slate-50 border-b-2 border-slate-200 text-slate-800 text-sm md:text-base">
+                    <th className="py-4 px-6 font-bold w-[20%]">Critério</th>
+                    <th className="py-4 px-6 font-bold w-[20%] text-blue-600">Design Thinking</th>
+                    <th className="py-4 px-6 font-bold w-[20%] text-indigo-600">Double Diamond</th>
+                    <th className="py-4 px-6 font-bold w-[20%] text-emerald-600">Design Sprint</th>
+                    <th className="py-4 px-6 font-bold w-[20%] text-rose-600">Service Design</th>
+                  </tr>
+                </thead>
+                
+                <tbody className="block md:table-row-group divide-y-0 md:divide-y md:divide-slate-100 text-sm md:text-sm lg:text-base">
+                  
+                  {/* Linha 1 */}
+                  <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-6 md:mb-0 hover:bg-slate-50/50 transition-colors">
+                    <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
+                      O que é?
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-blue-600 block mb-1 text-xs uppercase tracking-wider">Design Thinking</span>
+                      Abordagem de resolução de problemas
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-indigo-600 block mb-1 text-xs uppercase tracking-wider">Double Diamond</span>
+                      Framework de processo
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-emerald-600 block mb-1 text-xs uppercase tracking-wider">Design Sprint</span>
+                      Processo estruturado e intensivo
+                    </td>
+                    <td className="block md:table-cell px-5 py-4 md:px-6 text-slate-600">
+                      <span className="md:hidden font-bold text-rose-600 block mb-1 text-xs uppercase tracking-wider">Service Design</span>
+                      Abordagem para projetar e melhorar serviços
+                    </td>
+                  </tr>
+
+                  {/* Linha 2 */}
+                  <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-6 md:mb-0 hover:bg-slate-50/50 transition-colors">
+                    <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
+                      Objetivo
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-blue-600 block mb-1 text-xs uppercase tracking-wider">Design Thinking</span>
+                      Resolver problemas centrados no usuário
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-indigo-600 block mb-1 text-xs uppercase tracking-wider">Double Diamond</span>
+                      Organizar descoberta e desenvolvimento
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-emerald-600 block mb-1 text-xs uppercase tracking-wider">Design Sprint</span>
+                      Validar uma solução rapidamente
+                    </td>
+                    <td className="block md:table-cell px-5 py-4 md:px-6 text-slate-600">
+                      <span className="md:hidden font-bold text-rose-600 block mb-1 text-xs uppercase tracking-wider">Service Design</span>
+                      Criar ou melhorar experiências e serviços
+                    </td>
+                  </tr>
+
+                  {/* Linha 3 */}
+                  <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-6 md:mb-0 hover:bg-slate-50/50 transition-colors">
+                    <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
+                      Duração
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-blue-600 block mb-1 text-xs uppercase tracking-wider">Design Thinking</span>
+                      Variável
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-indigo-600 block mb-1 text-xs uppercase tracking-wider">Double Diamond</span>
+                      Variável
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 font-medium border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-emerald-600 block mb-1 text-xs uppercase tracking-wider">Design Sprint</span>
+                      Tradicionalmente 5 dias
+                    </td>
+                    <td className="block md:table-cell px-5 py-4 md:px-6 text-slate-600">
+                      <span className="md:hidden font-bold text-rose-600 block mb-1 text-xs uppercase tracking-wider">Service Design</span>
+                      Variável
+                    </td>
+                  </tr>
+
+                  {/* Linha 4 */}
+                  <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-6 md:mb-0 hover:bg-slate-50/50 transition-colors">
+                    <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
+                      Foco
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-blue-600 block mb-1 text-xs uppercase tracking-wider">Design Thinking</span>
+                      Pessoas + problema + solução
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-indigo-600 block mb-1 text-xs uppercase tracking-wider">Double Diamond</span>
+                      Problema + solução
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-emerald-600 block mb-1 text-xs uppercase tracking-wider">Design Sprint</span>
+                      Experimentação e validação
+                    </td>
+                    <td className="block md:table-cell px-5 py-4 md:px-6 text-slate-600">
+                      <span className="md:hidden font-bold text-rose-600 block mb-1 text-xs uppercase tracking-wider">Service Design</span>
+                      Experiência do usuário + processos + organização
+                    </td>
+                  </tr>
+
+                  {/* Linha 5 */}
+                  <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-6 md:mb-0 hover:bg-slate-50/50 transition-colors">
+                    <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
+                      Flexibilidade
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-blue-600 block mb-1 text-xs uppercase tracking-wider">Design Thinking</span>
+                      Alta
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-indigo-600 block mb-1 text-xs uppercase tracking-wider">Double Diamond</span>
+                      Alta
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-emerald-600 block mb-1 text-xs uppercase tracking-wider">Design Sprint</span>
+                      Mais estruturado
+                    </td>
+                    <td className="block md:table-cell px-5 py-4 md:px-6 text-slate-600">
+                      <span className="md:hidden font-bold text-rose-600 block mb-1 text-xs uppercase tracking-wider">Service Design</span>
+                      Alta
+                    </td>
+                  </tr>
+
+                  {/* Linha 6 */}
+                  <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-6 md:mb-0 hover:bg-slate-50/50 transition-colors">
+                    <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
+                      Prototipagem
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-blue-600 block mb-1 text-xs uppercase tracking-wider">Design Thinking</span>
+                      Importante
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-indigo-600 block mb-1 text-xs uppercase tracking-wider">Double Diamond</span>
+                      Importante
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 font-medium border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-emerald-600 block mb-1 text-xs uppercase tracking-wider">Design Sprint</span>
+                      Fundamental
+                    </td>
+                    <td className="block md:table-cell px-5 py-4 md:px-6 text-slate-600">
+                      <span className="md:hidden font-bold text-rose-600 block mb-1 text-xs uppercase tracking-wider">Service Design</span>
+                      Importante
+                    </td>
+                  </tr>
+
+                  {/* Linha 7 */}
+                  <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-6 md:mb-0 hover:bg-slate-50/50 transition-colors">
+                    <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
+                      Teste com usuário
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-blue-600 block mb-1 text-xs uppercase tracking-wider">Design Thinking</span>
+                      Sim
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-indigo-600 block mb-1 text-xs uppercase tracking-wider">Double Diamond</span>
+                      Sim
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-emerald-600 block mb-1 text-xs uppercase tracking-wider">Design Sprint</span>
+                      Sim
+                    </td>
+                    <td className="block md:table-cell px-5 py-4 md:px-6 text-slate-600">
+                      <span className="md:hidden font-bold text-rose-600 block mb-1 text-xs uppercase tracking-wider">Service Design</span>
+                      Sim
+                    </td>
+                  </tr>
+
+                  {/* Linha 8 */}
+                  <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-6 md:mb-0 hover:bg-slate-50/50 transition-colors">
+                    <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
+                      Principal perspectiva
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-blue-600 block mb-1 text-xs uppercase tracking-wider">Design Thinking</span>
+                      Necessidades humanas e resolução de problemas
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-indigo-600 block mb-1 text-xs uppercase tracking-wider">Double Diamond</span>
+                      Descoberta → definição → desenvolvimento → entrega
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-emerald-600 block mb-1 text-xs uppercase tracking-wider">Design Sprint</span>
+                      Testar rapidamente uma hipótese/solução
+                    </td>
+                    <td className="block md:table-cell px-5 py-4 md:px-6 text-slate-600">
+                      <span className="md:hidden font-bold text-rose-600 block mb-1 text-xs uppercase tracking-wider">Service Design</span>
+                      Jornada do usuário e funcionamento do serviço
+                    </td>
+                  </tr>
+
+                  {/* Linha 9 */}
+                  <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-6 md:mb-0 hover:bg-slate-50/50 transition-colors">
+                    <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
+                      Principais ferramentas
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-blue-600 block mb-1 text-xs uppercase tracking-wider">Design Thinking</span>
+                      Empatia, ideação, protótipos, testes
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-indigo-600 block mb-1 text-xs uppercase tracking-wider">Double Diamond</span>
+                      Discover, Define, Develop, Deliver
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-emerald-600 block mb-1 text-xs uppercase tracking-wider">Design Sprint</span>
+                      Sprint, sketch, decisão, protótipo, teste
+                    </td>
+                    <td className="block md:table-cell px-5 py-4 md:px-6 text-slate-600">
+                      <span className="md:hidden font-bold text-rose-600 block mb-1 text-xs uppercase tracking-wider">Service Design</span>
+                      Journey Map, Service Blueprint, Personas
+                    </td>
+                  </tr>
+
+                  {/* Linha 10 */}
+                  <tr className="block md:table-row bg-white shadow-md md:shadow-none rounded-xl md:rounded-none border border-slate-200 md:border-none mb-0 hover:bg-slate-50/50 transition-colors">
+                    <td className="block md:table-cell px-5 py-4 md:px-6 font-bold md:font-semibold text-slate-900 bg-slate-50 md:bg-transparent border-b border-slate-200 md:border-none rounded-t-xl md:rounded-none text-lg md:text-base">
+                      Exemplo de aplicação
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-blue-600 block mb-1 text-xs uppercase tracking-wider">Design Thinking</span>
+                      Criar uma nova solução para um problema
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-indigo-600 block mb-1 text-xs uppercase tracking-wider">Double Diamond</span>
+                      Estruturar um projeto de inovação
+                    </td>
+                    <td className="block md:table-cell px-5 py-3 md:py-4 md:px-6 text-slate-600 border-b border-slate-100 md:border-none">
+                      <span className="md:hidden font-bold text-emerald-600 block mb-1 text-xs uppercase tracking-wider">Design Sprint</span>
+                      Validar uma nova funcionalidade
+                    </td>
+                    <td className="block md:table-cell px-5 py-4 md:px-6 text-slate-600">
+                      <span className="md:hidden font-bold text-rose-600 block mb-1 text-xs uppercase tracking-wider">Service Design</span>
+                      Melhorar um serviço de atendimento
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
